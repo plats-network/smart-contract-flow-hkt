@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    user-select: none;
+    color: #ffde00;
+    background: #333333;
+  }
+  input {
+    outline: none;
+    border: none;
+  }
+}
+
+@layer components {
+  .bg-layout {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .border-shadow {
+    box-shadow: 0 0 0 1.4px #777777;
+  }
+  .border-shadow-yellow {
+    box-shadow: 0 0 0 2px #ffb100;
+  }
+  .gridAuto-Fit {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
